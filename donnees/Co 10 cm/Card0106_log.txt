@@ -1,0 +1,267 @@
+|--------------------------------------------------------------------------|
+|		TNT Card n°0106 - Run started on Tue Feb 18 16:37:50 CET 2020		     |
+|--------------------------------------------------------------------------|
+				Card type:Tnt2
+
+	Datafiles----------------------------------------------
+
+		Energy histogram, Davis format, channel 1: D:\StageM1-2020\18 Fevrier\Cobalt 2 eme mesure\Card0106_histo_V1.asc
+
+		Channel number special bits
+			Bitmask: 15(Property)/ null(AcqData)
+			Bitvalues: 0(Property)/ null(AcqData)
+
+
+	Acquisition mode------------------------------------------------
+
+		ENERGY HISTOGRAM (MULTIPARAMETRIC)
+
+
+	TNT2 : CARD INPUTS ---------------------------------------------
+
+		INPUT 1 :Common mode
+			ADC BUS for channel 1 :OFF		Analogical gain : 0-2 MeV
+			Offset:-30000				Kirk's Phaser: 1 sampling periods =10.0 ns
+			Energy events readout
+			Oscillogram readout
+				Data to take as oscillogram readout: item n°4 in the list
+
+		INPUT 2 :Disabled
+			ADC BUS for channel 2 :OFF		Analogical gain : 0-2 MeV
+			Offset:-2300				Kirk's Phaser: 1 sampling periods =10.0 ns
+			No energy events readout
+			No oscillogram readout
+				Data to take as oscillogram readout: item n°1 in the list
+
+		INPUT 3 :Disabled
+			ADC BUS for channel 3 :ON		Analogical gain : 0-2 MeV
+			Offset:0				Kirk's Phaser: 1 sampling periods =10.0 ns
+			No energy events readout
+			No oscillogram readout
+				Data to take as oscillogram readout: item n°1 in the list
+
+		INPUT 4 :Disabled
+			ADC BUS for channel 4 :ON		Analogical gain : 0-2 MeV
+			Offset:0				Kirk's Phaser: 1 sampling periods =10.0 ns
+			No energy events readout
+			No oscillogram readout
+				Data to take as oscillogram readout: item n°1 in the list
+
+	Triggering -----------------------------------------------------
+
+				Channel 1: Enabled		Type: Digital	Level: 25	Differentiation constant: 5	Integration constant: 20, on - slope	Kd correction coefficient: 65343	CFD Delay: 80.0 ns	CFD Gain: 1/2	CFD Shift: 20.0 ns	NIM input 1
+				Channel 2: Enabled		Type: Digital	Level: 1000	Differentiation constant: 2	Integration constant: 20, on + slope	Kd correction coefficient: 65443	CFD Delay: 80.0 ns	CFD Gain: 1/2	CFD Shift: 10.0 ns	NIM input 1
+				Channel 3: Enabled		Type: Digital	Level: 1000	Differentiation constant: 2	Integration constant: 20, on + slope	Kd correction coefficient: 65443	CFD Delay: 80.0 ns	CFD Gain: 1/2	CFD Shift: 10.0 ns	NIM input 1
+				Channel 4: Enabled		Type: Digital	Level: 1000	Differentiation constant: 2	Integration constant: 20, on + slope	Kd correction coefficient: 65443	CFD Delay: 80.0 ns	CFD Gain: 1/2	CFD Shift: 10.0 ns	NIM input 1
+		Force trigger: No
+		Allways output trigger on dedicated NIM output
+
+
+	ADC Clock - DDS-------------------------------------------------
+
+		Clock type to use: internal (with quartz 20 Mhz)
+		DDS input frequency: 20 Mhz
+		ADC coding frequency: 100 Mhz
+		ADC coding clock phase: 0°
+		The ADC clock used is always redirected on the dedicated LVDS output
+
+
+	Synchronisation - Time counter----------------------------------
+
+		Re-init counters every: 65535 minutes.
+
+		Re-init Timestamp when receiving some signal over NIM IN4: false
+
+		Re-init Timestamp when starting an acquisition: true
+
+		Enable LSE feature over NIM input 1 : false
+			Allways readout LSE over NIM input 1 : false
+				If 'Only if events follows' choosen, consider events of  	card input 1:false 	card input 2:false 	card input 3:false 	card input 4:false
+		Enable LSE feature over NIM input 2 : false
+			Allways readout LSE over NIM input 2 : false
+				If 'Only if events follows' choosen, consider events of  	card input 1:false 	card input 2:false 	card input 3:false 	card input 4:false
+		Enable LSE feature over NIM input 3 : false
+			Allways readout LSE over NIM input 3 : false
+				If 'Only if events follows' choosen, consider events of  	card input 1:false 	card input 2:false 	card input 3:false 	card input 4:false
+		Enable LSE feature over NIM input 4 : false
+			Allways readout LSE over NIM input 4 : false
+				If 'Only if events follows' choosen, consider events of  	card input 1:false 	card input 2:false 	card input 3:false 	card input 4:false
+
+
+	Acquisition start synchronisation ------------------------------
+
+		Card is master :true
+
+	Energy calculation parameters ----------------------------------
+
+		Rise time of the trapezoidal shape, k:
+			Channel 1:4500.0 ns
+			Channel 2:2000.0 ns
+			Channel 3:2000.0 ns
+			Channel 4:2000.0 ns
+
+		Flat top of the trapezoidal shape, m:
+			Channel 1:3000.0 ns
+			Channel 2:2000.0 ns
+			Channel 3:2000.0 ns
+			Channel 4:2000.0 ns
+
+		Digital gain :
+			Channel 1:25
+			Channel 2:1
+			Channel 3:1
+			Channel 4:1
+
+		Average shift:
+			Channel 1:1000.0 ns
+			Channel 2:1200.0 ns
+			Channel 3:1200.0 ns
+			Channel 4:1200.0 ns
+
+		Average width:
+			Channel 1:200.0 ns
+			Channel 2:200.0 ns
+			Channel 3:200.0 ns
+			Channel 4:200.0 ns
+
+		X factor:
+			Channel 1:819
+			Channel 2:819
+			Channel 3:819
+			Channel 4:819
+
+		Pile up reject :
+			Channel 1:No
+			Channel 2:No
+			Channel 3:No
+			Channel 4:No
+
+		Base line correction (some base line averaging):
+			Channel 1:2
+			Channel 2:3
+			Channel 3:3
+			Channel 4:3
+
+		Time decay constant:
+			Channel 1:34000.0 ns
+			Channel 2:50000.0 ns
+			Channel 3:50000.0 ns
+			Channel 4:50000.0 ns
+
+		ADC overflow tagging (Mark & readout events when ADC is out of range instead of rejecting):
+			Channel 1:No
+			Channel 2:No
+			Channel 3:No
+			Channel 4:No
+
+
+	External Validation --------------------------------------------
+
+		For input 1:  no
+		For input 2:  no
+		For input 3:  no
+		For input 4:  no
+
+
+
+	NIM inputs / ouputs---------------------------------------------
+
+		 NIM input 1	Delay=10 ns	Gate=10 ns	Enabled 		With 50 ohms resistance		Falling edge		Not inversed
+		 NIM input 2	Delay=10 ns	Gate=10 ns	Enabled 		With 50 ohms resistance		Falling edge		Not inversed
+		 NIM input 3	Delay=10 ns	Gate=10 ns	Enabled 		With 50 ohms resistance		Falling edge		Not inversed
+		 NIM input 4	Delay=10 ns	Gate=10 ns	Enabled 		With 50 ohms resistance		Falling edge		Not inversed
+		 NIM input Retrigger ability:true
+		 NIM output 1	Delay=10 ns	Gate=10 ns
+		 NIM output 2	Delay=10 ns	Gate=10 ns
+		 NIM output 3	Delay=10 ns	Gate=10 ns
+		 NIM output 4	Delay=10 ns	Gate=10 ns
+
+
+	Inspection lines------------------------------------------------
+
+		Analogical inspection line 1: On	Item n°0 in the list
+		Analogical inspection line 2: On	Item n°4 in the list
+		DAC sleep:false
+
+		Logical inspection line 1: On	Item n°34 in the list
+		Logical inspection line 2: On	Item n°0 in the list
+		Logical inspection line 3: Off	Item n°0 in the list
+		Logical inspection line 4: Off	Item n°0 in the list
+
+
+	LVDS I/O--------------------------------------------------------
+
+		LVDS outputs enable:true
+		LVDS inputs enable:true
+
+	DUMMY EVENTS output period--------------------------------------
+		Feature :disabled
+	Top synchro generation--------------------------------------------
+		NIM1 output period:5 ms
+	LOCAL TRIGGER---------------------------------------------------
+		 Local trigger output 1	Gate=10 ns	Delay=0 ns
+		 Local trigger output 2	Gate=10 ns	Delay=0 ns
+		 Local trigger output 3	Gate=10 ns	Delay=0 ns
+		 Local trigger output 4	Gate=10 ns	Delay=0 ns
+	DUMMY Card information readouted in  event channel number field-----
+		 6 bits value: 0
+	AUTOMATIC OFFSET ADJUSTMENT-----------------------------------------------
+		Enable:false
+
+
+		Channel 1---------------
+			Offset_A=-5120
+			CR1=4096
+			Offset_B=-9984
+			CR2=8192
+			Offset_C=-19968
+			CR3=51200
+			Offset_D=-29952
+			CR4=100352
+		Channel 2---------------
+			Offset_A=-5120
+			CR1=4096
+			Offset_B=-9984
+			CR2=8192
+			Offset_C=-19968
+			CR3=51200
+			Offset_D=-29952
+			CR4=100352
+		Channel 3---------------
+			Offset_A=-5120
+			CR1=4096
+			Offset_B=-9984
+			CR2=8192
+			Offset_C=-19968
+			CR3=51200
+			Offset_D=-29952
+			CR4=100352
+		Channel 4---------------
+			Offset_A=-5120
+			CR1=4096
+			Offset_B=-9984
+			CR2=8192
+			Offset_C=-19968
+			CR3=51200
+			Offset_D=-29952
+			CR4=100352
+	STUFF-----------------------------------------------
+		Typ of digital gain: old gain
+		Enable Reset Amplifier:false
+
+
+
+		TNT Card n 0106 - Run stopped on Tue Feb 18 17:12:07 CET 2020
+			                             Duration=2056.406 s
+			         Histogram n°1, hits: 3585949 / 3672577
+
+
+		Channel number special bits
+			Bitmask: 15(Property)/ 15(AcqData)
+			Bitvalues: 0(Property)/ 0(AcqData)|----------------------------------------------------------|
+
+
+
+
+
+
